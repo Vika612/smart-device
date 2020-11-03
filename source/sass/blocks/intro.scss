@@ -20,9 +20,7 @@
 }
 
 .intro__wrapper {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-top: 325px;
+  padding: 325px 40px 0;
 
   display: flex;
   justify-content: space-between;
@@ -34,7 +32,7 @@
 }
 
 .intro__pic {
-  flex-basis: 45%;
+  padding: 0 15px;
 }
 
 .intro__pic img {
@@ -66,10 +64,8 @@
 
   .intro__pic {
     position: relative;
-    z-index: 3;
-
+    left: -30px;
     padding-top: 45px;
-    padding-left: 20px;
   }
 
   .intro__pic img {
@@ -92,13 +88,15 @@
   }
 
   .intro__wrapper {
+    padding: 250px 0 0;
     flex-direction: column-reverse;
   }
 
   .intro__pic {
-    flex-basis: 100%;
+    left: 10px;
+    bottom: -20px;
     margin: 0;
-    padding: 0;
+    padding-top: 15px;
   }
 
   .intro__pic img {

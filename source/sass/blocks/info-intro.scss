@@ -1,8 +1,9 @@
 .info-intro {
   position: relative;
-
-  flex-basis: 55%;
-  padding: 60px 0 0 90px;
+  z-index: 3;
+  max-width: 850px;
+  margin-right: 15px;
+  padding: 60px 20px 0 90px;
 }
 
 .info-intro h1 {
@@ -21,6 +22,7 @@
 
 .info-intro p {
   position: relative;
+  z-index: 3;
 
   margin: 0;
   margin-bottom: 46px;
@@ -42,7 +44,7 @@
 }
 
 .info-intro__btn span {
-  max-width: 407px;
+  width: 407px;
   margin-left: 100px;
   padding: 17px 28px 17px;
   display: block;
@@ -88,7 +90,7 @@
 
 @media (max-width: 1023px) {
   .info-intro {
-    padding: 120px 0 0 90px;
+    padding: 120px 20px 0 50px;
   }
 
   .info-intro h1 {
@@ -107,30 +109,32 @@
     }
   }
 
-  .info-intro a:last-child {
-    display: none;
-  }
-
-  .info-intro__btn {
-    max-width: 379px;
+  .info-intro__btn span {
+    width: 379px;
     margin-left: 50px;
     margin-right: -25px;
     padding: 17px 14px 17px;
+  }
+
+  .info-intro a:last-child {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
   .info-intro {
-    flex-basis: 100%;
+    margin: 0;
     padding: 0 15px;
   }
 
   .info-intro h1 {
+    margin-bottom: 20px;
     font-size: 40px;
   }
 
   .info-intro p {
     max-width: 300px;
+    margin-bottom: 40px;
     font-size: 16px;
   }
 
@@ -139,7 +143,7 @@
   }
 
   .info-intro__btn span:last-child {
-    max-width: 287px;
+    width: 287px;
     margin: 0 auto;
     padding: 17px 11px 17px;
     display: block;
