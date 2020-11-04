@@ -241,6 +241,11 @@ body {
   text-transform: uppercase;
   cursor: pointer; }
 
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
 .header__wrapper {
   position: relative;
   z-index: 3;
@@ -442,6 +447,7 @@ body {
   position: relative;
   min-height: 950px;
   margin-top: -190px;
+  margin-bottom: 110px;
   background: url("../img/bg/bg-main-desk@1x.jpg");
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
