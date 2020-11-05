@@ -47,7 +47,11 @@
           <a href="#">Скролл вниз</a>
         </div>
         <div class="intro__pic">
-          <img src="../img/circuit-board@1x.png" width="705" height="515" alt="Печатные платы">
+          <picture>
+            <!--1x: 705x515; 2x: 1410x1030-->
+            <source type="image/webp" srcset="img/circuit-board@1x.webp 1x, img/circuit-board@2x.webp 2x">
+            <img src="img/circuit-board@1x.png" srcset="img/circuit-board@1x.png 2x" width="705" height="515" alt="Печатные платы">
+          </picture>
         </div>
       </div>
     </section>
