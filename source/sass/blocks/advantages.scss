@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 110px;
+  margin-bottom: 70px;
 }
 
 .advantages__list {
@@ -48,6 +48,10 @@
 }
 
 @media (max-width: 1023px) {
+  .advantages {
+    margin-bottom: 27px;
+  }
+
   .advantages__list li {
     max-width: 345px;
     min-height: 230px;
