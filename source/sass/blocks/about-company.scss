@@ -1,5 +1,5 @@
 .about-company {
-  margin-bottom: 95px;
+  margin-bottom: 90px;
 }
 
 .about-company__wrapper {
@@ -38,12 +38,12 @@
 }
 
 .about-company__desc p:first-child {
-  padding-bottom: 26px;
+  padding-bottom: 20px;
 }
 
 .about-company a {
   width: 180px;
-  margin-top: 40px;
+  margin-top: 35px;
   padding: 13px;
   display: block;
 
@@ -61,8 +61,12 @@
 }
 
 @media (max-width: 1023px) {
+  .about-company {
+    margin-bottom: 33px;
+  }
+
   .about-company__wrapper {
-    padding: 0 10px 20px 197px;
+    padding: 0 10px 50px 197px;
     background-size: 260px 360px;
     background-position: -30px 0;
   }
@@ -77,7 +81,7 @@
   }
 
   .about-company__desc p:first-child {
-    padding-bottom: 31px;
+    padding-bottom: 20px;
   }
 
   .about-company__hidden {
@@ -85,11 +89,15 @@
   }
 
   .about-company a {
-    margin-top: 45px;
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 767px) {
+  .about-company {
+    margin-bottom: 67px;
+  }
+
   .about-company__wrapper {
     padding: 0;
     background-image: none;
