@@ -27,7 +27,7 @@
   color: $black-text;
 }
 
-.about-company__desc span {
+.about-company__desc span:first-child {
   display: none;
 }
 
@@ -75,7 +75,7 @@
     font-size: 32px;
   }
 
-  .about-company__desc span {
+  .about-company__desc span:first-child {
     display: inline-block;
     vertical-align: bottom;
   }

@@ -1,0 +1,182 @@
+.form__data {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__data input {
+  width: 270px;
+  height: 50px;
+  margin: 10px 0;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+.form__data input::placeholder,
+.form textarea::placeholder {
+  color: $white;
+}
+
+.form textarea {
+  width: 100%;
+  height: 154px;
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.form button {
+  width: 270px;
+  padding: 14px 18px;
+  font-size: 14px;
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.form__checkbox {
+  width: 265px;
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.form__checkbox label {
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 1.1;
+  color: $white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.form__checkbox label::before {
+  position: absolute;
+  top: 3px;
+  left: -8px;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: $blue;
+  border: 1px solid $white;
+}
+
+.form__checkbox label::after {
+  position: absolute;
+  top: 6px;
+  left: -5px;
+  content: "";
+  width: 7.5px;
+  height: 4.5px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  color: $white;
+  transform: rotate(-45deg);
+}
+
+/*Прячем галку по умолчанию*/
+.form__checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Показываем галку по состоянию checked*/
+.form__checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Добавляем фокус к внешнему блоку кастомного чекбокса*/
+.form__checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+@media (max-width: 1023px) {
+  .form__data input {
+    width: 280px;
+  }
+
+  .form textarea {
+    height: 159px;
+    margin-bottom: 45px;
+    padding: 18px;
+  }
+
+  .form button {
+    width: 280px;
+  }
+
+  .form__checkbox {
+    width: 280px;
+  }
+
+  .form__checkbox label {
+    padding-left: 35px;
+  }
+
+  .form__checkbox label::before {
+    top: 0;
+    left: 0;
+  }
+
+  .form__checkbox label::after {
+    top: 3px;
+    left: 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form__data {
+    margin-bottom: 15px;
+  }
+
+  .form__data input {
+    width: 290px;
+    margin: 15px 0;
+  }
+
+  .form textarea {
+    width: 290px;
+    height: 105px;
+    margin-bottom: 25px;
+  }
+
+  .form__submit {
+    flex-direction: column-reverse;
+  }
+
+  .form button {
+    width: 290px;
+    margin-bottom: 32px;
+  }
+
+  .form__checkbox label {
+    padding-left: 20px;
+  }
+
+  .form__checkbox label::before {
+    left: -13px;
+  }
+
+  .form__checkbox label::after {
+    left: -9px;
+  }
+}

@@ -45,3 +45,23 @@
   };
   scrollTo();
 }());
+
+
+/* MASK PHONE */
+
+(function () {
+
+  var phone = document.querySelector('#phone');
+
+  phone.addEventListener('focus', function (_) {
+    if (!/^\+\d*$/.test(phone.value)) {
+      phone.value = '+7';
+    }
+  });
+
+  phone.addEventListener('keypress', function (e) {
+    if (!/\d/.test(e.key)) {
+      e.preventDefault();
+    }
+  });
+}());
