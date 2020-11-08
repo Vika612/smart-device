@@ -1,0 +1,143 @@
+.modal {
+  position: relative;
+  width: 490px;
+  margin: 0 auto;
+  padding: 25px 40px 20px;
+  background-color: $blue;
+}
+
+.modal__info h2 {
+  margin: 0 0 20px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.4;
+  color: $white;
+}
+
+.modal__info p {
+  margin: 0 0 15px 0;
+  padding-right: 20px;
+  color: $white;
+}
+
+.modal__data input {
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+.modal__data input::placeholder,
+.modal textarea::placeholder {
+  color: $white;
+}
+
+.modal textarea {
+  width: 100%;
+  height: 104px;
+  margin: 15px 0 30px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+}
+
+.modal__submit {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.modal__button {
+  width: 100%;
+  margin-bottom: 35px;
+  padding: 14px 18px;
+  font-size: 14px;
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.modal__checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.modal__checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.modal__checkbox label {
+  position: relative;
+  padding: 0 20px 0 35px;
+  font-size: 14px;
+  line-height: 1.1;
+  color: $white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.modal__checkbox label::before {
+  position: absolute;
+  top: 0;
+  left: -13px;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: $blue;
+  border: 1px solid $white;
+}
+
+.modal__checkbox label::after {
+  position: absolute;
+  top: 3px;
+  left: -8px;
+  content: "";
+  width: 7.5px;
+  height: 4.5px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  color: $white;
+  transform: rotate(-45deg);
+}
+
+/*Прячем галку по умолчанию*/
+.modal__checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Показываем галку по состоянию checked*/
+.modal__checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Добавляем фокус к внешнему блоку кастомного чекбокса*/
+.modal__checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+.modal__button-close {
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    right: 20px;
+    width: 17px;
+    height: 17px;
+    color: $white;
+    cursor: pointer;
+    content: url("../img/svg/close.svg");
+  }
+}
