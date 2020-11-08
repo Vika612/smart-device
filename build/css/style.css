@@ -928,13 +928,17 @@ body {
 
 .feedback__wrapper {
   position: relative;
-  min-height: 670px;
+  padding-bottom: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  background: url("../img/svg/polygons.svg") no-repeat;
+  background-size: cover;
+  background-position-x: 275%;
+  background-position-y: -100px; }
 
 .feedback__wrapper img {
   position: relative;
@@ -959,9 +963,10 @@ body {
   color: #ffffff; }
 
 @media (max-width: 1023px) {
-  .feedback,
-  .feedback__wrapper {
+  .feedback {
     min-height: 664px; }
+  .feedback__wrapper {
+    background: none; }
   .feedback__wrapper img {
     display: none; }
   .feedback__info {
@@ -975,9 +980,10 @@ body {
     margin: 0 0 43px; } }
 
 @media (max-width: 767px) {
-  .feedback,
-  .feedback__wrapper {
+  .feedback {
     min-height: 630px; }
+  .feedback__wrapper {
+    padding-bottom: 15px; }
   .feedback__info {
     width: 320px;
     margin: 0 auto;
