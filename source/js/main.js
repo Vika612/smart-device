@@ -51,17 +51,38 @@
 
 (function () {
 
-  var phone = document.querySelector('#phone');
+  var inputPhone = document.querySelector('#phone');
+  var inputTel = document.querySelector('#tel');
 
-  phone.addEventListener('focus', function (_) {
-    if (!/^\+\d*$/.test(phone.value)) {
-      phone.value = '+7';
-    }
-  });
-
-  phone.addEventListener('keypress', function (e) {
-    if (!/\d/.test(e.key)) {
-      e.preventDefault();
-    }
-  });
+  function setMaskInputTel(input) {
+    input.onclick = function () {
+      input.value = '+7(';
+    };
+    var old = 0;
+    input.onkeydown = function () {
+      var curLen = input.value.length;
+      if (curLen < old) {
+        old--;
+        return;
+      }
+      if (curLen === 6) {
+        input.value = input.value + ') ';
+      }
+      if (curLen === 11) {
+        input.value = input.value + ' ';
+      }
+      if (curLen === 14) {
+        input.value = input.value + ' ';
+      }
+      if (curLen > 16) {
+        input.value = input.value.substring(0, input.value.length - 1);
+      }
+      old++;
+    };
+  }
+  setMaskInputTel(inputPhone);
+  setMaskInputTel(inputTel);
 }());
+
+
+/* POP-UP */
