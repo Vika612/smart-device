@@ -1,7 +1,7 @@
 .info-intro {
   position: relative;
   z-index: 3;
-  max-width: 850px;
+  flex-basis: 52.5%;
   margin-right: 15px;
   padding: 60px 20px 0 90px;
 }
@@ -90,6 +90,7 @@
 
 @media (max-width: 1023px) {
   .info-intro {
+    margin-right: 0;
     padding: 120px 20px 0 50px;
   }
 
@@ -125,7 +126,8 @@
   .info-intro {
     margin: 0;
     margin-top: 10px;
-    padding: 0 15px;
+    padding: 222px 15px 0;
+    flex-basis: 100%;
   }
 
   .info-intro h1 {

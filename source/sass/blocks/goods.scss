@@ -63,6 +63,11 @@
   width: 370px;
   height: 620px;
   opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
 }
 
 @media (max-width: 1023px) {
