@@ -1,0 +1,20 @@
+.footer__wrapper {
+  margin: 0 auto;
+  padding: 40px 130px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer__first {
+  flex-basis: 30%;
+}
+
+.footer__second {
+  flex-basis: 70%;
+}
+
+.footer__third {
+  flex-basis: 100%;
+}

@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social a {
+  width: 27px;
+  height: 27px;
+  margin-right: 17px;
+  display: block;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.3);
+  }
+}
+
+.social__link--fb {
+  background: url("../img/svg/fb.svg") no-repeat center;
+}
+
+.social__link--ok {
+  background: url("../img/svg/ok.svg") no-repeat center;
+}
+
+.social__link--w {
+  background: url("../img/svg/w.svg") no-repeat center;
+}

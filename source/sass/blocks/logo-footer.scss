@@ -1,0 +1,27 @@
+.logo-footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer__group {
+  min-width: 148px;
+  margin-left: 20px;
+}
+
+.logo-footer__group p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.1;
+  color: $black-logo;
+}
+
+.logo-footer__group span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.1;
+  color: $grey;
+}

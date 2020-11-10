@@ -152,6 +152,13 @@
       localStorage.setItem('telInput', telInput.value);
       localStorage.setItem('messageInput', messageInput.value);
     }
+    popup.classList.remove('modal--show');
   });
+}());
+
+
+/* ACCORDION */
+
+(function () {
 
 }());
