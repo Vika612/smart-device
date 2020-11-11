@@ -251,7 +251,7 @@ body {
   overflow: hidden; }
 
 .button {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-align: center;
@@ -352,14 +352,14 @@ body {
 .logo__group p {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 1.1;
   color: #ffffff; }
 
 .logo__group span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.1;
@@ -494,17 +494,18 @@ body {
   background-position-x: 45%;
   background-position-y: 80px; }
 
+.intro__pic,
+.intro__pic img {
+  width: 705px;
+  height: 515px; }
+
 .intro__pic {
   position: relative;
-  width: 705px;
-  height: 515px;
   -ms-flex-preferred-size: 46.5%;
       flex-basis: 46.5%; }
 
 .intro__pic img {
   position: absolute;
-  width: 705px;
-  height: 515px;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -531,15 +532,14 @@ body {
     padding: 250px 0 0 40px;
     background-position-x: 50%;
     background-position-y: 45px; }
-  .intro__pic {
-    width: 465px;
-    height: 340px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    top: 45px; }
+  .intro__pic,
   .intro__pic img {
     width: 465px;
-    height: 340px; } }
+    height: 340px; }
+  .intro__pic {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    top: 45px; } }
 
 @media (max-width: 767px) {
   .intro {
@@ -564,16 +564,15 @@ body {
             flex-direction: column-reverse;
     background-position-x: 56%;
     background-position-y: 25px; }
+  .intro__pic,
+  .intro__pic img {
+    width: 301px;
+    height: 220px; }
   .intro__pic {
     left: 25px;
     top: 35px;
-    width: 301px;
-    height: 220px;
     margin: 0;
-    padding-top: 0; }
-  .intro__pic img {
-    width: 301px;
-    height: 220px; } }
+    padding-top: 0; } }
 
 .info-intro {
   position: relative;
@@ -586,7 +585,7 @@ body {
 .info-intro h1 {
   margin: 0;
   margin-bottom: 25px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 1.2;
@@ -722,7 +721,7 @@ body {
 
 .advantages__item h3 {
   margin: 16px 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
@@ -772,7 +771,7 @@ body {
 .about-company h2 {
   margin: 0;
   margin-bottom: 25px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.4;
@@ -844,7 +843,7 @@ body {
 .goods p {
   margin: 0;
   margin-bottom: 50px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.4;
@@ -888,7 +887,7 @@ body {
   left: 45px;
   max-width: 170px;
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
@@ -981,7 +980,7 @@ body {
 .feedback__info h2 {
   margin: 0 0 10px;
   padding-right: 15px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.4;
@@ -1310,14 +1309,14 @@ body {
 .logo-footer__group p {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 1.1;
   color: #203c42; }
 
 .logo-footer__group span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.1;
@@ -1382,7 +1381,7 @@ body {
 .accordion__item h3 {
   margin: 0;
   margin-bottom: 25px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
@@ -1581,7 +1580,7 @@ body {
 
 .modal__info h2 {
   margin: 0 0 20px 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.4;

@@ -19,8 +19,7 @@
 .about-company h2 {
   margin: 0;
   margin-bottom: 25px;
-
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.4;
@@ -46,7 +45,6 @@
   margin-top: 35px;
   padding: 13px;
   display: block;
-
   font-size: 14px;
   color: $blue;
   border: 1px solid $blue;

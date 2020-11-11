@@ -6,7 +6,6 @@
 .feedback__wrapper {
   position: relative;
   padding-bottom: 75px;
-
   display: flex;
   justify-content: space-between;
   background: url("../img/svg/polygons.svg") no-repeat;
@@ -29,8 +28,7 @@
 .feedback__info h2 {
   margin: 0 0 10px;
   padding-right: 15px;
-
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.4;

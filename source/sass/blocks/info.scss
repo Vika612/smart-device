@@ -1,7 +1,6 @@
 .info {
   position: relative;
   max-width: 900px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,13 +8,11 @@
 
 .info a {
   position: relative;
-
   margin: 0;
   margin-right: 90px;
   padding: 10px 0 10px 0;
   display: flex;
   align-items: center;
-
   line-height: 1.1;
   color: $white;
 
