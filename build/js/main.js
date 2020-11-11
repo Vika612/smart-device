@@ -161,4 +161,17 @@
 
 (function () {
 
+  var accordionTitles = document.querySelectorAll('.accordion__title');
+
+  accordionTitles.forEach(function (accordionTitle) {
+    accordionTitle.addEventListener('click', function () {
+
+      var currentlyActiveTitle = document.querySelector('.accordion__title.active');
+
+      if (currentlyActiveTitle && currentlyActiveTitle !== accordionTitle) {
+        currentlyActiveTitle.classList.toggle('active');
+      }
+      accordionTitle.classList.toggle('active');
+    });
+  });
 }());

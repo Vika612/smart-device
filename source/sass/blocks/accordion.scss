@@ -1,5 +1,118 @@
-.accordion {
+.accordion__wrapper {
+  padding: 27px 130px 0 205px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  outline: 1px solid lightseagreen;
+}
+
+.accordion__item ul {
+  max-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.accordion__item:first-child {
+  min-width: 500px;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.accordion__item h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.accordion__item a,
+.accordion__item span {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $black;
+  opacity: 0.5;
+}
+
+.accordion__item a {
+  display: block;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1023px) {
+  .accordion {
+    border-top: 1px solid $grey-footer;
+  }
+
+  .accordion__wrapper {
+    padding: 40px 35px 0 25px;
+  }
+
+  .accordion__item:first-child {
+    min-width: 350px;
+    margin-right: 0;
+  }
+
+  .accordion__item ul {
+    max-height: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion__wrapper {
+    padding: 0;
+  }
+
+  .accordion__item {
+    min-width: 100%;
+    padding-top: 33px;
+  }
+
+  .accordion__item:first-child {
+    min-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .accordion__item:last-child {
+    border-top: 1px solid $grey-footer;
+  }
+
+  .accordion__item h3 {
+    position: relative;
+    padding: 0 35px 0 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      right: 18px;
+      content: "\002B";
+      font-size: 25px;
+      color: $grey-2;
+    }
+  }
+
+  .accordion__title.active::after {
+    content: "\2212";
+  }
+
+  .accordion__item ul {
+    padding: 10px 20px 25px 15px;
+    display: none;
+  }
+
+  .accordion__title.active + .accordion__body {
+    display: block;
+  }
 }

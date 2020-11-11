@@ -3,10 +3,13 @@
   justify-content: flex-start;
 }
 
+.social li:not(:last-child) {
+  margin-right: 17px;
+}
+
 .social a {
   width: 27px;
   height: 27px;
-  margin-right: 17px;
   display: block;
 
   &:hover,
