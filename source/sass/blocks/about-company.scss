@@ -1,5 +1,23 @@
 .about-company {
+  position: relative;
   margin-bottom: 90px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: -400px;
+    left: -120px;
+    content: url("../img/svg/polygon-big.svg");
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: -380px;
+    right: -90px;
+    content: url("../img/svg/polygon-small.svg");
+    transform: rotate(60deg);
+  }
 }
 
 .about-company__wrapper {
@@ -61,6 +79,11 @@
 @media (max-width: 1023px) {
   .about-company {
     margin-bottom: 33px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .about-company__wrapper {

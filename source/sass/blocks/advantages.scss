@@ -1,5 +1,23 @@
 .advantages {
+  position: relative;
   margin-bottom: 70px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: -70px;
+    left: 83px;
+    content: url("../img/svg/polygon-small.svg");
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 25px;
+    left: 440px;
+    content: url("../img/svg/polygon-big.svg");
+    transform: rotate(180deg);
+  }
 }
 
 .advantages__list {
@@ -17,6 +35,7 @@
   padding: 38px 40px 40px 42px;
   outline: 1px solid $grey-border;
   border-left: 3px solid $blue;
+  background-color: $white;
 
   &:hover,
   &:focus {
@@ -49,6 +68,14 @@
 @media (max-width: 1023px) {
   .advantages {
     margin-bottom: 27px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      left: 210px;
+    }
   }
 
   .advantages__list li {

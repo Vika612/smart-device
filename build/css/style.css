@@ -688,7 +688,22 @@ body {
     display: block; } }
 
 .advantages {
+  position: relative;
   margin-bottom: 70px; }
+  .advantages::before {
+    position: absolute;
+    z-index: -1;
+    top: -70px;
+    left: 83px;
+    content: url("../img/svg/polygon-small.svg"); }
+  .advantages::after {
+    position: absolute;
+    z-index: -1;
+    top: 25px;
+    left: 440px;
+    content: url("../img/svg/polygon-big.svg");
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
 
 .advantages__list {
   display: -webkit-box;
@@ -709,7 +724,8 @@ body {
   margin: 0 15px 30px;
   padding: 38px 40px 40px 42px;
   outline: 1px solid #ebebeb;
-  border-left: 3px solid #00b2ff; }
+  border-left: 3px solid #00b2ff;
+  background-color: #ffffff; }
   .advantages__list li:hover, .advantages__list li:focus {
     background-color: #00b2ff; }
 
@@ -735,6 +751,10 @@ body {
 @media (max-width: 1023px) {
   .advantages {
     margin-bottom: 27px; }
+    .advantages::before {
+      display: none; }
+    .advantages::after {
+      left: 210px; }
   .advantages__list li {
     max-width: 345px;
     min-height: 230px;
@@ -754,7 +774,22 @@ body {
     font-size: 20px; } }
 
 .about-company {
+  position: relative;
   margin-bottom: 90px; }
+  .about-company::before {
+    position: absolute;
+    z-index: -1;
+    top: -400px;
+    left: -120px;
+    content: url("../img/svg/polygon-big.svg"); }
+  .about-company::after {
+    position: absolute;
+    z-index: -1;
+    top: -380px;
+    right: -90px;
+    content: url("../img/svg/polygon-small.svg");
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg); }
 
 .about-company__wrapper {
   position: relative;
@@ -805,6 +840,8 @@ body {
 @media (max-width: 1023px) {
   .about-company {
     margin-bottom: 33px; }
+    .about-company::before, .about-company::after {
+      display: none; }
   .about-company__wrapper {
     padding: 0 10px 50px 197px;
     background-size: 260px 360px;
