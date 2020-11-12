@@ -812,9 +812,6 @@ body {
   line-height: 1.4;
   color: #666666; }
 
-.about-company__desc span:first-child {
-  display: none; }
-
 .about-company__desc p {
   margin: 0;
   line-height: 1.4;
@@ -848,13 +845,8 @@ body {
     background-position: -30px 0; }
   .about-company h2 {
     font-size: 32px; }
-  .about-company__desc span:first-child {
-    display: inline-block;
-    vertical-align: bottom; }
   .about-company__desc p:first-child {
     padding-bottom: 20px; }
-  .about-company__hidden {
-    display: none; }
   .about-company a {
     margin-top: 40px; } }
 

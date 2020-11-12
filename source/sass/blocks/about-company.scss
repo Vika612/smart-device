@@ -44,10 +44,6 @@
   color: $black-text;
 }
 
-.about-company__desc span:first-child {
-  display: none;
-}
-
 .about-company__desc p {
   margin: 0;
   line-height: 1.4;
@@ -96,17 +92,8 @@
     font-size: 32px;
   }
 
-  .about-company__desc span:first-child {
-    display: inline-block;
-    vertical-align: bottom;
-  }
-
   .about-company__desc p:first-child {
     padding-bottom: 20px;
-  }
-
-  .about-company__hidden {
-    display: none;
   }
 
   .about-company a {

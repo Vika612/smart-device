@@ -82,6 +82,34 @@
 }());
 
 
+/*  CROP TEXT */
+
+(function () {
+
+  var cropElement = document.querySelectorAll('.crop-text');
+  var size = 233;
+  var endCharacter = '..';
+
+  cropElement.forEach(function (el) {
+    var text = el.innerHTML;
+    var cropText = text.substr(0, size);
+    var onResizeText = function () {
+
+      if (window.innerWidth > 1023) {
+        document.querySelector('.crop-text').innerHTML = text;
+      } else {
+        document.querySelector('.crop-text').innerHTML = cropText + endCharacter;
+      }
+    };
+
+    if ((el.innerHTML.length > size) && (window.innerWidth < 1024)) {
+      el.innerHTML = cropText + endCharacter;
+    }
+    window.addEventListener('resize', onResizeText);
+  });
+}());
+
+
 /* POP-UP */
 
 (function () {
