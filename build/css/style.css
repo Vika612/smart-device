@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -626,8 +627,8 @@ body {
   .info-intro__btn span:active {
     opacity: 0.7; }
 
-.info-intro__btn span:last-child {
-  display: none; }
+.info-intro__btn span::before {
+  content: "Получить бесплатную консультацию"; }
 
 .info-intro a:last-child {
   position: absolute;
@@ -678,13 +679,12 @@ body {
     max-width: 300px;
     margin-bottom: 45px;
     font-size: 16px; }
-  .info-intro__btn span:first-child {
-    display: none; }
-  .info-intro__btn span:last-child {
+  .info-intro__btn span {
     width: 287px;
     margin: 0 auto;
-    padding: 17px 11px 17px;
-    display: block; } }
+    padding: 17px 11px 17px; }
+  .info-intro__btn span::before {
+    content: "Бесплатная консультация"; } }
 
 .advantages {
   position: relative;
