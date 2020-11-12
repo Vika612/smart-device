@@ -152,17 +152,14 @@
   transform: rotate(-45deg);
 }
 
-/*Прячем галку по умолчанию*/
 .modal__checkbox input[type="checkbox"] + label::after {
   content: none;
 }
 
-/*Показываем галку по состоянию checked*/
 .modal__checkbox input[type="checkbox"]:checked + label::after {
   content: "";
 }
 
-/*Добавляем фокус к внешнему блоку кастомного чекбокса*/
 .modal__checkbox input[type="checkbox"]:focus + label::before {
   outline: rgb(59, 153, 252) auto 5px;
 }
