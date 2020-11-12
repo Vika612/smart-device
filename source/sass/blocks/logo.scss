@@ -1,25 +1,9 @@
 .logo {
   position: relative;
   min-width: 203px;
-  padding-right: 157px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    right: 0;
-    width: 37px;
-    height: 1px;
-    background-color: $white;
-  }
-
-  &::after {
-    top: 33px;
-  }
 }
 
 .logo__group {
@@ -48,11 +32,6 @@
 @media (max-width: 1023px) {
   .logo {
     padding-right: 20px;
-
-    &::before,
-    &::after {
-      display: none;
-    }
   }
 }
 

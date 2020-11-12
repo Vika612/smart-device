@@ -1,6 +1,6 @@
 .info {
   position: relative;
-  max-width: 900px;
+  max-width: 750px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -30,6 +30,22 @@
   margin-right: 0;
 }
 
+.info__mail::before {
+  content: "";
+  width: 19px;
+  height: 14px;
+  background: url("../img/svg/mail.svg") no-repeat center;
+  background-size: contain;
+}
+
+.info__phone::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url("../img/svg/phone.svg") no-repeat center;
+  background-size: contain;
+}
+
 .info span {
   margin-left: 17px;
 }
@@ -43,25 +59,10 @@
 @media (max-width: 1023px) {
   .info {
     padding-top: 10px;
-    padding-left: 75px;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 14px;
-      left: 0;
-      width: 37px;
-      height: 1px;
-      background-color: $white;
-    }
-
-    &::after {
-      top: 26px;
-    }
   }
 
   .info a {
+    margin-right: 35px;
     padding: 0;
   }
 
@@ -69,13 +70,12 @@
     display: none;
   }
 
-  .info__mail img {
+  .info__mail::before {
     width: 25px;
     height: 19px;
-    margin-right: 10px;
   }
 
-  .info__phone img {
+  .info__phone::before {
     width: 24px;
     height: 24px;
   }
@@ -91,20 +91,9 @@
 @media (max-width: 767px) {
   .info {
     padding-top: 0;
-    padding-left: 67px;
-
-    &::before,
-    &::after {
-      top: 3px;
-      left: 0;
-    }
-
-    &::after {
-      top: 15px;
-    }
   }
 
   .info a {
-    margin-right: 10px;
+    margin-right: 25px;
   }
 }
