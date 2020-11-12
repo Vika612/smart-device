@@ -3,11 +3,11 @@
   min-height: 950px;
   margin-top: -190px;
   margin-bottom: 110px;
-  background: url("../img/bg/bg-main-desk@1x.jpg");
+  background: url("../img/bg/bg-main-desk@1x.png");
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg/bg-main-desk@2x.jpg");
+    background-image: url("../img/bg/bg-main-desk@2x.png");
     background-size: 100% 100%;
   }
 
@@ -57,11 +57,11 @@
     margin-top: -265px;
     margin-bottom: 50px;
 
-    background: url("../img/bg/bg-main-table@1x.jpg");
+    background: url("../img/bg/bg-main-table@1x.png");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg/bg-main-table@2x.jpg");
+      background-image: url("../img/bg/bg-main-table@2x.png");
       background-size: 100% 100%;
     }
 
@@ -96,11 +96,11 @@
     margin-top: -265px;
     margin-bottom: 45px;
 
-    background: url("../img/bg/bg-main-mobile@1x.jpg");
+    background: url("../img/bg/bg-main-mobile@1x.png");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg/bg-main-mobile@2x.jpg");
+      background-image: url("../img/bg/bg-main-mobile@2x.png");
       background-size: 100% 100%;
     }
 

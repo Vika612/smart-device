@@ -465,11 +465,11 @@ body {
   min-height: 950px;
   margin-top: -190px;
   margin-bottom: 110px;
-  background: url("../img/bg/bg-main-desk@1x.jpg");
+  background: url("../img/bg/bg-main-desk@1x.png");
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro {
-      background-image: url("../img/bg/bg-main-desk@2x.jpg");
+      background-image: url("../img/bg/bg-main-desk@2x.png");
       background-size: 100% 100%; } }
   .intro::before {
     position: absolute;
@@ -517,11 +517,11 @@ body {
     min-height: 873px;
     margin-top: -265px;
     margin-bottom: 50px;
-    background: url("../img/bg/bg-main-table@1x.jpg");
+    background: url("../img/bg/bg-main-table@1x.png");
     background-size: cover; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .intro {
-      background-image: url("../img/bg/bg-main-table@2x.jpg");
+      background-image: url("../img/bg/bg-main-table@2x.png");
       background-size: 100% 100%; } }
 
 @media (max-width: 1023px) {
@@ -546,11 +546,11 @@ body {
     min-height: 834px;
     margin-top: -265px;
     margin-bottom: 45px;
-    background: url("../img/bg/bg-main-mobile@1x.jpg");
+    background: url("../img/bg/bg-main-mobile@1x.png");
     background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .intro {
-      background-image: url("../img/bg/bg-main-mobile@2x.jpg");
+      background-image: url("../img/bg/bg-main-mobile@2x.png");
       background-size: 100% 100%; } }
 
 @media (max-width: 767px) {
