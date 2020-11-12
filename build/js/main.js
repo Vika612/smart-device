@@ -68,10 +68,7 @@
       if (curLen === 6) {
         input.value = input.value + ') ';
       }
-      if (curLen === 11) {
-        input.value = input.value + ' ';
-      }
-      if (curLen === 14) {
+      if (curLen === 11 || curLen === 14) {
         input.value = input.value + ' ';
       }
       if (curLen > 16) {
