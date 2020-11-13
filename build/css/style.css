@@ -169,7 +169,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("PT Mono"), local("PTMono-Regular"), url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff") format("woff"); }
+  src: url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff") format("woff"); }
 
 /* roboto-500 - latin_cyrillic */
 @font-face {
@@ -177,7 +177,7 @@ template {
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"); }
+  src: url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"); }
 
 /* roboto-condensed-regular - latin_cyrillic */
 @font-face {
@@ -185,7 +185,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff") format("woff"); }
+  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff") format("woff"); }
 
 /* roboto-condensed-700 - latin_cyrillic */
 @font-face {
@@ -193,7 +193,7 @@ template {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff") format("woff"); }
+  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff") format("woff"); }
 
 /* GENERAL STYLES */
 html {
@@ -712,12 +712,14 @@ body {
   .advantages__list li:hover, .advantages__list li:focus {
     background-color: #00b2ff; }
 
-.advantages__item:hover svg path {
-  fill: #ffffff; }
+.advantages__item svg {
+  fill: #00b2ff; }
 
+.advantages__item:hover svg,
 .advantages__item:hover h3,
 .advantages__item:hover p {
-  color: #ffffff; }
+  color: #ffffff;
+  fill: #ffffff; }
 
 .advantages__item h3 {
   margin: 16px 0;

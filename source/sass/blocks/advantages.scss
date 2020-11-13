@@ -43,13 +43,15 @@
   }
 }
 
-.advantages__item:hover svg path {
-  fill: $white;
+.advantages__item svg {
+  fill: $blue;
 }
 
+.advantages__item:hover svg,
 .advantages__item:hover h3,
 .advantages__item:hover p {
   color: $white;
+  fill: $white;
 }
 
 .advantages__item h3 {
