@@ -712,12 +712,15 @@ body {
   .advantages__list li:hover, .advantages__list li:focus {
     background-color: #00b2ff; }
 
+.advantages__item svg path {
+  fill: #00b2ff; }
+
+.advantages__item:hover svg path {
+  fill: #ffffff; }
+
 .advantages__item:hover h3,
 .advantages__item:hover p {
   color: #ffffff; }
-
-.advantages__item:hover svg {
-  fill: #ffffff; }
 
 .advantages__item h3 {
   margin: 16px 0;
