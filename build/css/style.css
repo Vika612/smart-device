@@ -712,9 +712,6 @@ body {
   .advantages__list li:hover, .advantages__list li:focus {
     background-color: #00b2ff; }
 
-.advantages__item svg path {
-  fill: #00b2ff; }
-
 .advantages__item:hover svg path {
   fill: #ffffff; }
 
