@@ -977,11 +977,12 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: url("../img/svg/polygons.svg") no-repeat;
-  background-size: cover;
-  background-position-x: 275%;
-  background-position-y: -100px; }
+          justify-content: space-between; }
+  .feedback__wrapper::before {
+    position: absolute;
+    top: -175px;
+    right: 480px;
+    content: url("../img/svg/polygons.svg"); }
 
 .feedback__wrapper img {
   position: relative;
@@ -1008,8 +1009,7 @@ body {
 @media (max-width: 1023px) {
   .feedback {
     min-height: 664px; }
-  .feedback__wrapper {
-    background: none; }
+  .feedback__wrapper::before,
   .feedback__wrapper img {
     display: none; }
   .feedback__info {
