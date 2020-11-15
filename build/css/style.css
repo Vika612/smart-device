@@ -1390,16 +1390,19 @@ body {
   margin-right: auto;
   margin-bottom: 20px; }
 
-.accordion__item h3 {
+.accordion__item button {
   margin: 0;
   margin-bottom: 25px;
+  padding: 0;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1b2d37; }
+  background-color: transparent;
+  color: #1b2d37;
+  border: none; }
 
 .accordion__item a,
 .accordion__item span {
@@ -1430,16 +1433,17 @@ body {
   .accordion__wrapper {
     padding: 0; }
   .accordion__item {
-    min-width: 100%;
-    padding-top: 33px; }
+    min-width: 100%; }
   .accordion__item:first-child {
     min-width: 100%;
     margin-bottom: 0; }
   .accordion__item:last-child {
     border-top: 1px solid rgba(98, 105, 98, 0.2); }
-  .accordion__item h3 {
+  .accordion__item button {
     position: relative;
-    padding: 0 35px 0 15px;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 33px 35px 33px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1447,7 +1451,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer; }
-    .accordion__item h3::after {
+    .accordion__item button::after {
       position: absolute;
       right: 18px;
       content: "\002B";

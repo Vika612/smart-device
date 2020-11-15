@@ -18,16 +18,19 @@
   margin-bottom: 20px;
 }
 
-.accordion__item h3 {
+.accordion__item button {
   margin: 0;
   margin-bottom: 25px;
+  padding: 0;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  background-color: transparent;
   color: $black;
+  border: none;
 }
 
 .accordion__item a,
@@ -75,7 +78,6 @@
 
   .accordion__item {
     min-width: 100%;
-    padding-top: 33px;
   }
 
   .accordion__item:first-child {
@@ -87,9 +89,11 @@
     border-top: 1px solid $grey-footer;
   }
 
-  .accordion__item h3 {
+  .accordion__item button {
     position: relative;
-    padding: 0 35px 0 15px;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 33px 35px 33px 15px;
     display: flex;
     align-items: center;
     cursor: pointer;
