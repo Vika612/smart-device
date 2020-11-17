@@ -138,6 +138,7 @@
   openBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
     popup.classList.add('modal--show');
+    document.body.style.overflow = 'hidden';
 
     if (isStorageSupport) {
       if (storageName) {
@@ -156,17 +157,20 @@
   closeBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
     popup.classList.remove('modal--show');
+    document.body.style.overflow = 'visible';
   });
 
   popup.addEventListener('click', function (evt) {
     if (evt.target.closest('.modal__content') === null) {
       popup.classList.remove('modal--show');
+      document.body.style.overflow = 'visible';
     }
   });
 
   window.addEventListener('keydown', function (evt) {
     if (evt.code === 'Escape') {
       popup.classList.remove('modal--show');
+      document.body.style.overflow = 'visible';
     }
   });
 
@@ -178,6 +182,7 @@
       localStorage.setItem('messageInput', messageInput.value);
     }
     popup.classList.remove('modal--show');
+    document.body.style.overflow = 'visible';
   });
 }());
 
