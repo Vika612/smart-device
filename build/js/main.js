@@ -51,34 +51,48 @@
 
 (function () {
 
-  var inputPhone = document.querySelector('#phone');
-  var inputTel = document.querySelector('#tel');
+  var phoneInputList = document.querySelectorAll('input[type="tel"]');
+  var phoneInput;
 
-  function setMaskInputTel(input) {
-    input.onclick = function () {
-      input.value = '+7(';
-    };
-    var old = 0;
-    input.onkeydown = function () {
-      var curLen = input.value.length;
-      if (curLen < old) {
-        old--;
-        return;
-      }
-      if (curLen === 6) {
-        input.value = input.value + ') ';
-      }
-      if (curLen === 11 || curLen === 14) {
-        input.value = input.value + ' ';
-      }
-      if (curLen > 16) {
-        input.value = input.value.substring(0, input.value.length - 1);
-      }
-      old++;
-    };
+  for (var i = 0; i < phoneInputList.length; i++) {
+    phoneInput = phoneInputList[i];
+    phoneInput.addEventListener('click', addPhone);
+    phoneInput.addEventListener('keydown', checkPhone);
   }
-  setMaskInputTel(inputPhone);
-  setMaskInputTel(inputTel);
+
+  function addPhone(evt) {
+    var inp = evt.target;
+    if (!inp.value.length) {
+      inp.value = '+7(';
+    }
+  }
+
+  function checkPhone(evt) {
+    var inp = evt.target;
+    var curLen = inp.value.length;
+    if (!/\d/.test(evt.key)) {
+      if (evt.keyCode === 8 || evt.keyCode === 9) {
+        return;
+      } else {
+        evt.preventDefault();
+      }
+    }
+    if (curLen === 0) {
+      inp.value = inp.value + '+7(';
+    }
+    if (curLen === 2) {
+      inp.value = inp.value + '(';
+    }
+    if (curLen === 6) {
+      inp.value = inp.value + ') ';
+    }
+    if (curLen === 10 || curLen === 13) {
+      inp.value = inp.value + '-';
+    }
+    if (curLen > 16) {
+      inp.value = inp.value.substring(0, inp.value.length - 1);
+    }
+  }
 }());
 
 
