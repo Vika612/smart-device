@@ -139,11 +139,11 @@
     evt.preventDefault();
     popup.classList.add('modal--show');
     document.body.style.overflow = 'hidden';
+    nameInput.focus();
 
     if (isStorageSupport) {
       if (storageName) {
         nameInput.value = storageName;
-        nameInput.focus();
       }
       if (storageTel) {
         telInput.value = storageTel;
