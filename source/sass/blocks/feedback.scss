@@ -24,7 +24,7 @@
 }
 
 .feedback__info {
-  width: 570px;
+  min-width: 570px;
   padding: 95px 0 30px;
 }
 
@@ -54,7 +54,7 @@
   }
 
   .feedback__info {
-    width: 590px;
+    min-width: 590px;
     margin: 0 auto;
     padding: 80px 0 30px;
   }
@@ -79,7 +79,7 @@
   }
 
   .feedback__info {
-    width: 320px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 30px 0;
   }
