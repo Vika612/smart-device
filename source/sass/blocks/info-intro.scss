@@ -1,9 +1,9 @@
 .info-intro {
   position: relative;
   z-index: 3;
-  flex-basis: 52.5%;
+  flex-basis: 52%;
   margin-right: 15px;
-  padding: 60px 20px 0 90px;
+  padding: 60px 20px 0 0;
 }
 
 .info-intro h1 {
@@ -68,7 +68,7 @@
 .info-intro a:last-child {
   position: absolute;
   bottom: 20px;
-  left: 57px;
+  left: -35px;
   font-size: 14px;
   line-height: 1.1;
   color: $white;
@@ -118,18 +118,23 @@
   .info-intro {
     margin: 0;
     margin-top: 10px;
-    padding: 222px 15px 65px;
+    padding: 218px 15px 65px;
     flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .info-intro h1 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 40px;
   }
 
   .info-intro p {
     max-width: 300px;
     margin-bottom: 45px;
+    padding-left: 55px;
     font-size: 16px;
   }
 

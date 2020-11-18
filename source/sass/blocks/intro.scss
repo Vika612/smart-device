@@ -25,13 +25,15 @@
 }
 
 .intro__wrapper {
-  padding: 325px 0 0 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 325px 0 0 90px;
   display: flex;
   justify-content: space-between;
   background: url("../img/svg/polygons.svg") no-repeat;
   background-size: cover;
   background-position-x: 45%;
-  background-position-y: 80px;
+  background-position-y: 85px;
 }
 
 .intro__pic,
@@ -42,7 +44,7 @@
 
 .intro__pic {
   position: relative;
-  flex-basis: 46.5%;
+  flex-basis: 48%;
 }
 
 .intro__pic img {
@@ -115,7 +117,7 @@
     flex-direction: column-reverse;
 
     background-position-x: 56%;
-    background-position-y: 25px;
+    background-position-y: 5px;
   }
 
   .intro__pic,
