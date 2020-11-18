@@ -83,6 +83,7 @@
 
   .accordion__item:last-child {
     border-top: 1px solid $grey-footer;
+    border-bottom: 1px solid $grey-footer;
   }
 
   .accordion__item h3 {
@@ -116,6 +117,7 @@
   }
 
   .accordion__body {
+    padding-bottom: 30px;
     display: none;
   }
 
