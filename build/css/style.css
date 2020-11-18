@@ -1087,6 +1087,9 @@ body {
   border: none;
   border-radius: 0; }
 
+.form__data input[type="tel"] {
+  margin-left: 30px; }
+
 .form__data input::-webkit-input-placeholder,
 .form textarea::-webkit-input-placeholder {
   color: #ffffff; }
@@ -1223,6 +1226,8 @@ body {
   .form__data input {
     width: 290px;
     margin: 15px 0; }
+  .form__data input[type="tel"] {
+    margin-left: 0; }
   .form textarea {
     width: 290px;
     height: 105px;

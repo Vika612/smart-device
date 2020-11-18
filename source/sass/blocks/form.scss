@@ -15,6 +15,10 @@
   border-radius: 0;
 }
 
+.form__data input[type="tel"] {
+  margin-left: 30px;
+}
+
 .form__data input::placeholder,
 .form textarea::placeholder {
   color: $white;
@@ -151,6 +155,10 @@
   .form__data input {
     width: 290px;
     margin: 15px 0;
+  }
+
+  .form__data input[type="tel"] {
+    margin-left: 0;
   }
 
   .form textarea {
