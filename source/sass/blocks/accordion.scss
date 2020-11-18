@@ -1,26 +1,27 @@
 .accordion__wrapper {
-  padding: 27px 130px 0 205px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .accordion__item ul {
-  max-height: 100px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.accordion__item:first-child {
-  min-width: 500px;
-  margin-right: auto;
-  margin-bottom: 20px;
+.accordion__nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-.accordion__item button {
+.accordion__nav li {
+  margin-right: 75px;
+}
+
+.accordion__item h3 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding: 0;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
@@ -28,9 +29,7 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background-color: transparent;
   color: $black;
-  border: none;
 }
 
 .accordion__item a,
@@ -56,18 +55,16 @@
     border-top: 1px solid $grey-footer;
   }
 
+  .accordion__nav {
+    flex-direction: column;
+  }
+
   .accordion__wrapper {
-    padding: 40px 35px 0 25px;
+    padding: 40px 35px 40px 25px;
   }
 
-  .accordion__item:first-child {
-    min-width: 350px;
-    margin-right: 0;
-  }
-
-  .accordion__item ul {
-    max-height: 100%;
-    padding-bottom: 20px;
+  .accordion__item h3 {
+    margin-bottom: 27px;
   }
 }
 
@@ -80,39 +77,45 @@
     min-width: 100%;
   }
 
-  .accordion__item:first-child {
-    min-width: 100%;
-    margin-bottom: 0;
+  .accordion__item ul {
+    padding: 0 20px 0 15px;
   }
 
   .accordion__item:last-child {
     border-top: 1px solid $grey-footer;
   }
 
-  .accordion__item button {
+  .accordion__item h3 {
     position: relative;
     width: 100%;
     margin-bottom: 0;
-    padding: 33px 35px 33px 15px;
+    padding: 30px 35px 30px 15px;
     display: flex;
-    align-items: center;
     cursor: pointer;
 
-    &::after {
+    &::after,
+    &::before {
+      content: "";
       position: absolute;
-      right: 18px;
-      content: "\002B";
-      font-size: 25px;
-      color: $grey-2;
+      width: 16px;
+      height: 1px;
+      background: #1b2b37;
+      opacity: 0.5;
+      right: 17px;
+      top: 36px;
+      display: block;
+    }
+
+    &::after {
+      transform: rotate(90deg);
     }
   }
 
   .accordion__title.active::after {
-    content: "\2212";
+    display: none;
   }
 
-  .accordion__item ul {
-    padding: 10px 20px 25px 15px;
+  .accordion__body {
     display: none;
   }
 

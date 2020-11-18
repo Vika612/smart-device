@@ -1,5 +1,4 @@
 .info-footer {
-  padding: 27px 0 0 130px;
   display: flex;
   flex-direction: column;
 }
@@ -22,6 +21,7 @@
 
   .info-footer__note {
     display: block;
+    margin-left: 20px;
     font-size: 13px;
     line-height: 1.8;
     letter-spacing: 0.04em;
@@ -37,15 +37,16 @@
 
 @media (max-width: 767px) {
   .info-footer {
-    padding: 0 25px 50px;
+    padding: 0 25px 55px;
     flex-direction: column;
   }
 
   .info-footer__logo {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .info-footer__note {
     margin-bottom: 30px;
+    margin-left: 0;
   }
 }
