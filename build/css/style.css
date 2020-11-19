@@ -1262,7 +1262,7 @@ body {
 
 .footer__first {
   max-width: 350px;
-  margin-right: 205px;
+  margin-right: 208px;
   margin-bottom: 30px; }
 
 .footer__second {
@@ -1438,10 +1438,14 @@ body {
 .accordion__nav li {
   margin-right: 75px; }
 
-.accordion__item h3 {
+.accordion__item input {
+  display: none; }
+
+.accordion__item label {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+  display: block;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1486,7 +1490,9 @@ body {
   .accordion__item:last-child {
     border-top: 1px solid rgba(98, 105, 98, 0.2);
     border-bottom: 1px solid rgba(98, 105, 98, 0.2); }
-  .accordion__item h3 {
+  .accordion__item input {
+    display: block; }
+  .accordion__item label {
     position: relative;
     width: 100%;
     margin-bottom: 0;
@@ -1495,7 +1501,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     cursor: pointer; }
-    .accordion__item h3::after, .accordion__item h3::before {
+    .accordion__item label::after, .accordion__item label::before {
       content: "";
       position: absolute;
       width: 16px;
@@ -1505,15 +1511,16 @@ body {
       right: 17px;
       top: 36px;
       display: block; }
-    .accordion__item h3::after {
+    .accordion__item label::after {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }
-  .accordion__title.active::after {
+  .accordion__item input:checked ~ .accordion__label::after {
     display: none; }
   .accordion__body {
     padding-bottom: 30px;
     display: none; }
-  .accordion__title.active + .accordion__body {
+  .accordion__item input[id="navigation"]:checked ~ .accordion__nav,
+  .accordion__item input[id="contacts"]:checked ~ .accordion__contacts {
     display: block; } }
 
 .copyright {

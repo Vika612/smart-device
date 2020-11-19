@@ -227,13 +227,10 @@
         <section class="footer__second accordion">
           <div class="accordion__wrapper">
             <div class="accordion__item">
-              <h3 class="accordion__title">Разделы сайта</h3>
+              <input class="visually-hidden accordion__title" type="checkbox" name="navigation" id="navigation">
+              <label class="accordion__label" for="navigation">Разделы сайта</label>
               <div class="accordion__body accordion__nav">
                 <ul class="same-list">
-                  <li><a href="#about-company" class="js-scroll">О компании</a></li>
-                  <li><a href="#goods" class="js-scroll">Продукты</a></li>
-                  <li><a href="#">Производство печатных плат</a></li>
-                  <li><a href="#">Монтаж печатных плат</a></li>
                   <li><a href="#about-company" class="js-scroll">О компании</a></li>
                   <li><a href="#goods" class="js-scroll">Продукты</a></li>
                   <li><a href="#">Производство печатных плат</a></li>
@@ -247,8 +244,9 @@
               </div>
             </div>
             <div class="accordion__item">
-              <h3 class="accordion__title">Наш офис</h3>
-              <div class="accordion__body">
+              <input class="visually-hidden accordion__title" type="checkbox" name="contacts" id="contacts">
+              <label class="accordion__label" for="contacts">Наш офис</label>
+              <div class="accordion__body accordion__contacts">
                 <ul class="same-list">
                   <li><span>г. Мытищи, Олимпийский проспект, д.10</span></li>
                   <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>

@@ -205,17 +205,16 @@
 
 (function () {
 
-  var accordionTitles = document.querySelectorAll('.accordion__title');
+  var accTitles = document.querySelectorAll('.accordion__title');
 
-  accordionTitles.forEach(function (accordionTitle) {
-    accordionTitle.addEventListener('click', function () {
-
-      var currentlyActiveTitle = document.querySelector('.accordion__title.active');
-
-      if (currentlyActiveTitle && currentlyActiveTitle !== accordionTitle) {
-        currentlyActiveTitle.classList.toggle('active');
+  for (var i = 0; i < accTitles.length; i++) {
+    var acc = accTitles[i];
+    acc.addEventListener('click', function (evt) {
+      if (evt.target.checked) {
+        for (var j = 0; j < accTitles.length; j++) {
+          accTitles[j].checked = accTitles[j] === evt.target ? true : false;
+        }
       }
-      accordionTitle.classList.toggle('active');
     });
-  });
+  }
 }());
