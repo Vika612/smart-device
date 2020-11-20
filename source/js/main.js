@@ -35,7 +35,7 @@
   };
 
   var scrollTo = function () {
-    var links = document.querySelectorAll('.js-scroll');
+    var links = Array.prototype.slice.call(document.querySelectorAll('.js-scroll'));
     links.forEach(function (each) {
       each.addEventListener('click', function () {
         var currentTarget = each.getAttribute('href');
@@ -100,7 +100,7 @@
 
 (function () {
 
-  var cropElement = document.querySelectorAll('.crop-text');
+  var cropElement = Array.prototype.slice.call(document.querySelectorAll('.crop-text'));
   var size = 233;
   var endCharacter = '..';
 
