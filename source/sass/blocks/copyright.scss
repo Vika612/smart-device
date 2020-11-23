@@ -53,6 +53,12 @@
   }
 }
 
+@media (max-width: 1170px) {
+  .copyright__wrap {
+    width: 750px;
+  }
+}
+
 @media (max-width: 1023px) {
   .copyright__wrapper {
     padding: 25px 25px 0;

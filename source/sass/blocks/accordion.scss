@@ -55,6 +55,12 @@
   }
 }
 
+@media (max-width: 1170px) {
+  .accordion__nav li {
+    margin-right: 35px;
+  }
+}
+
 @media (max-width: 1023px) {
   .accordion {
     border-top: 1px solid $grey-footer;
